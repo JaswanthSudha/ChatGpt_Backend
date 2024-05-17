@@ -23,7 +23,7 @@ app.post("/data", async (req, res) => {
     const text = response.text();
     res.json({ "message": text })
 })
-app.listen(4000, () => {
+app.listen(process.env.PORT, () => {
     console.log("listening to the port")
 })
 
